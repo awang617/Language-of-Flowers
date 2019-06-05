@@ -20,7 +20,7 @@ class SearchContainer extends Component {
             this.setState({
                 response: response.data
             })
-            // console.log(this.state.response)
+            console.log(this.state.response)
         })
         .catch((error) => {
             console.log(error)
@@ -60,7 +60,7 @@ class SearchContainer extends Component {
         if (searchResults) {
             results = searchResults.map((flowers) => {
                 return (
-                    <Results flowers={flowers} key={flowers.id} />
+                    <Results flowers={flowers} key={flowers._id} />
                 )
             });
         }
