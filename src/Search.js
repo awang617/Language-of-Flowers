@@ -9,8 +9,8 @@ class Search extends Component {
                     <option value="name">Name</option>
                     <option value="meaning">Meaning</option>
                 </select>
-                <input placeholder="What are you looking for?" onInput={this.props.onInput}/>
-                <input type="submit" value="Search"/>
+                <input placeholder="search" onInput={this.props.onInput}/>
+                {/* <input type="submit" value="Search"/> */}
             </form>
         )
     }

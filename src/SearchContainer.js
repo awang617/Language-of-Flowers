@@ -10,7 +10,8 @@ class SearchContainer extends Component {
         search: 'name'
     }
 
-    search = () => {Axios.get(`http://localhost:3001/search/`+this.state.search, {
+    search = () => {
+        Axios.get(`http://localhost:3001/search/`+this.state.search, {
             params: {
                 q: this.state.query
             }
@@ -69,6 +70,7 @@ class SearchContainer extends Component {
                 {results}
             </div>
         )
+    
     }
 }
 
