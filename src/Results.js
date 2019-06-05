@@ -5,7 +5,9 @@ class Results extends Component {
     render () {
         return (
             <div>
-                <p>{this.props.flowers.name}, <em>{this.props.flowers.meaning}</em></p>
+                <p>
+                    <a href="/flower">{this.props.flowers.name}</a>, <em>{this.props.flowers.meaning}</em>
+                </p>
             </div>
         )
     }
