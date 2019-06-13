@@ -1,0 +1,11 @@
+.name, .scientific-name {
+    text-transform: capitalize
+}
+
+.meaning::first-letter{
+    text-transform: uppercase
+}
+
+a {
+    display: block
+}
