@@ -2,6 +2,15 @@
     cursor: pointer;
 }
 
-.search-results:hover {
-    color: blue
+p {
+    display: inline;
 }
+
+.search-results:hover {
+    color: #9db296
+}
+
+.search-name::first-letter, .search-meaning::first-letter {
+    text-transform: uppercase;
+}
+
