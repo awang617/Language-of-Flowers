@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
+import {Container, Row, Col, Image} from 'react-bootstrap'
+import './Flower.css'
 
 class Flower extends Component {
     state = {
@@ -22,13 +24,21 @@ class Flower extends Component {
     
     render() {
         return (
-            <div>
-                <h1>{this.state.flower.name}</h1>
-                <h3>(<em>{this.state.flower.scientificName}</em>)</h3>
-                <h3>{this.state.flower.meaning}</h3>
-                <p><a href='/'>Return to search</a></p>
-                <img src={this.state.flower.image} />
-            </div>
+            <Container>
+                <Row>
+                    <Col sm>
+                        <h1 className="name">{this.state.flower.name}</h1>
+                        <h4 className="scientific-name">(<em>{this.state.flower.scientificName}</em>)</h4>
+                        <h4 className="meaning">{this.state.flower.meaning}</h4>
+                        <p>{this.state.flower.description}</p>
+                        <a href={this.state.flower.sources}>Source</a>
+                    </Col>
+                    <Col sm>
+                        <Image src={this.state.flower.image} alt={this.state.flower.name} fluid/>
+                        <p><a href='/'>Return to search</a></p>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 }
