@@ -11,9 +11,10 @@ class Results extends Component {
     render () {
         return (
             <div>
-                <p onClick={this.redirectView} className="search-results">
-                    {this.props.flowers.name}, <em>{this.props.flowers.meaning}</em>
-                </p>
+                <div onClick={this.redirectView} className="search-results">
+                    <p className="search-name">{this.props.flowers.name}, </p>
+                    <p className="search-meaning"><em>{this.props.flowers.meaning}</em></p>
+                </div>
             </div>
         )
     }
