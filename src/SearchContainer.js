@@ -20,7 +20,7 @@ class SearchContainer extends Component {
             this.setState({
                 response: response.data
             })
-            console.log(this.state.response)
+            // console.log(this.state.response)
         })
         .catch((error) => {
             console.log(error)
@@ -41,8 +41,10 @@ class SearchContainer extends Component {
     }
 
     onInput = (event) => {
+        var q = event.target.value;
+        var lowerq = q.toLowerCase()
         this.setState({
-            query: event.target.value
+            query: lowerq
         })
         console.log(this.state.query)
     }
