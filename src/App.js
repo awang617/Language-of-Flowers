@@ -5,7 +5,6 @@ import Home from './Home'
 import Flower from './Flower'
 import {
   Route,
-  Link,
   Switch
 } from 'react-router-dom'
 

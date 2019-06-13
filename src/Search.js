@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+// import {Select, TextInput} from 'react-materialize'
 
 class Search extends Component {
 
@@ -6,6 +7,7 @@ class Search extends Component {
         return (
             <form>
                 <select name="search" onChange={this.props.onChange}>
+                    
                     <option value="name">Name</option>
                     <option value="meaning">Meaning</option>
                 </select>
