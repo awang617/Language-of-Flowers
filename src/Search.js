@@ -1,19 +1,19 @@
 import React, {Component} from 'react'
-// import {Select, TextInput} from 'react-materialize'
+import {InputGroup, FormControl, DropdownButton, Dropdown} from 'react-bootstrap'
 
 class Search extends Component {
 
     render() {
         return (
-            <form>
-                <select name="search" onChange={this.props.onChange}>
+            <InputGroup>
+                <DropdownButton name="search"  title={this.props.search}>
                     
-                    <option value="name">Name</option>
-                    <option value="meaning">Meaning</option>
-                </select>
-                <input placeholder="search" onInput={this.props.onInput}/>
+                    <Dropdown.Item onClick={this.props.onClick} value="name">Name</Dropdown.Item>
+                    <Dropdown.Item onClick={this.props.onClick} value="meaning">Meaning</Dropdown.Item>
+                </DropdownButton>
+                <FormControl placeholder="search" onInput={this.props.onInput}/>
                 {/* <input type="submit" value="Search"/> */}
-            </form>
+            </InputGroup>
         )
     }
 }

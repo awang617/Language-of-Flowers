@@ -48,10 +48,12 @@ class SearchContainer extends Component {
     }
 
     change = (event) => {
+        // console.log(event.currentTarget.attributes.value.nodeValue)
+        // debugger;
         this.setState({
-            search: event.target.value
+            search: event.currentTarget.attributes.value.nodeValue
         })
-        console.log(event.target.value)
+        console.log(this.state.search)
     }
 
     render() {
@@ -66,7 +68,7 @@ class SearchContainer extends Component {
         }
         return (
             <div>
-                <Search onInput={this.onInput} onChange={this.change} search={this.state.search}/>
+                <Search onInput={this.onInput} onClick={this.change} search={this.state.search}/>
                 {results}
             </div>
         )
