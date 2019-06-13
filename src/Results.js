@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Results.css';
 
 class Results extends Component {
     redirectView = () => {
@@ -10,7 +11,7 @@ class Results extends Component {
     render () {
         return (
             <div>
-                <p onClick={this.redirectView}>
+                <p onClick={this.redirectView} className="search-results">
                     {this.props.flowers.name}, <em>{this.props.flowers.meaning}</em>
                 </p>
             </div>

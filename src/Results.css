@@ -1,0 +1,7 @@
+.search-results {
+    cursor: pointer;
+}
+
+.search-results:hover {
+    color: blue
+}
