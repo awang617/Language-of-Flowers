@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# The Language of Flowers Dictionary
+This app is a dictionary for the language of flowers. Visitors can search by name or meaning depending on what they are looking for. The flexible search bar outputs results as you type. You can also click on the results to pull up a more detailed page with the flower/plant's information including an image and short description.
 
-## Available Scripts
+I wanted to create this app to be able to quickly search and find flower meanings. Online flower dictionaries are often a single page and difficult to navigate on mobile. I wanted something that would function well on a phone screen or computer.
 
-In the project directory, you can run:
+https://language-of-flowers.herokuapp.com/
 
-### `npm start`
+## Technologies Used
+- React.js
+- React-Bootstrap
+- HTML
+- CSS
+- Javascript
+The back end for this project can be found here: https://github.com/awang617/Flower-Language-API
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges
+Adding styling to this project was a bit difficult. I built the project for functionality first and ignored the styling until later. I found that styling is very different in React projects and it took me some time to remember how to use external styling components. Once I figured it out and adjusted my app to look more presentable, I discovered that some of the components were not compatible with the search logic. I had to rework some of the functions so they would work with the external components.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Successes
+Getting all the logic to initially work for the flexible search bar was a big success. React has a lot of functionality built into it that makes it easier to quickly change your component and toggle my API calls. Fixing my app after breaking it with external components was also a big success for me.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Results
+This project was completed after a little longer than a week and I completed the React front end for my language of flowers dictionary. I found this project to be very helpful with getting myself familiar with React again especially on a project on my own. I'm happy with the end project and fulfilled the scope of what I wanted this project to be.
