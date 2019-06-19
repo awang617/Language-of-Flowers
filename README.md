@@ -13,6 +13,11 @@ https://language-of-flowers.herokuapp.com/
 - Javascript
 The back end for this project can be found here: https://github.com/awang617/Flower-Language-API
 
+## Running this project
+1. Clone this repo with ```git clone https://github.com/awang617/Language-of-Flowers.git```
+2. Run ```npm install```
+3. Open ```localhost:3000``` in your browser
+
 ## Challenges
 Adding styling to this project was a bit difficult. I built the project for functionality first and ignored the styling until later. I found that styling is very different in React projects and it took me some time to remember how to use external styling components. Once I figured it out and adjusted my app to look more presentable, I discovered that some of the components were not compatible with the search logic. I had to rework some of the functions so they would work with the external components.
 
